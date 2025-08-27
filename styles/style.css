@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+.page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.page .header {
+  width: 100%;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.page .header video {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+.page .header .navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(71, 71, 71, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 0px;
+}
+.page .header .navbar .rating{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .header .navbar .rating .rating-number{
+  width: 240px;
+  height: 48px;
+  background-color: #F0E7DF1F;
+  border-radius: 34px;
+  display: flex;
+}
+.page .header .navbar .rating .rating-number .rating-logo{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+.page .header .navbar .rating .rating-number .rating-logo .ylogo{
+  width: 30px;
+  height: 30px;
+}
+.page .header .navbar .rating .rating-number .rating-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.page .header .navbar .rating .rating-number .rating-text .number{
+  font-size: 13.8px;
+  line-height: 20px;
+}
+.page .header .navbar .rating .rating-number .rating-text .explanation{
+  font-size: 10.8px;
+  line-height: 16px;
+  color: #FFFFFFB2;
+}
+.page .header .navbar .rating .rating-description{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13.8px;
+  line-height: 20px;
+  text-align: left;
+  position: absolute;
+  left: 200px;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 2.5px;
+}
+
+
+
+.page .header .navbar .logo {
+  width: 10%;
+  height: 100%;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.page .header .navbar .info {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.page .header .navbar .info .socials {
+  width: 30%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
