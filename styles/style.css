@@ -403,7 +403,7 @@
   position: relative;
   left: -15px;
 }
-.page .header .slide-previews .current {
+.page .header .slide-previews .currentPreview {
   width: 260px;
   height: 138px;
   display: flex;
@@ -411,7 +411,7 @@
   justify-content: center;
   background-color: #fff;
 }
-.page .header .slide-previews .current .left .current-number {
+.page .header .slide-previews .currentPreview .left .current-number {
   color: #000;
   font-size: 15px;
   border: 1px solid #a87c25;
@@ -426,7 +426,7 @@
 .page
   .header
   .slide-previews
-  .current
+  .currentPreview
   .left
   .preview-text
   .current-description {
@@ -439,6 +439,6 @@
   font-weight: 400;
   letter-spacing: 1.5px;
 }
-.page .header .slide-previews .current .right .preview-image img {
+.page .header .slide-previews .currentPreview .right .preview-image img {
   display: block;
 }
