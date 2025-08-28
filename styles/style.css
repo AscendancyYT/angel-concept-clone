@@ -307,3 +307,128 @@
   transform: translateX(5px) translateY(-5px);
   transition: all 0.2s linear;
 }
+.page .hidden {
+  display: none;
+}
+.page .header .slide-previews {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.page .header .slide-previews .preview {
+  width: 144.4px;
+  height: 138px;
+  border-radius: 10px;
+  background-color: #ffffff1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.page .header .slide-previews .preview:hover {
+  transform: scale(1.05);
+  transition: all 0.2s linear;
+}
+.page .header .slide-previews .preview .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
+.page .header .slide-previews .preview .preview-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.page .header .slide-previews .preview .left .preview-text {
+  font-size: 12px;
+  line-height: 124%;
+  color: #000;
+  margin-top: 5px;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: -1%;
+  font-weight: 400;
+}
+.page .header .slide-previews .preview img {
+  display: none;
+}
+.page .header .slide-previews .preview .left .preview-number {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  left: -15px;
+  top: -5px;
+}
+.page .header .slide-previews .preview .left .preview-description {
+  font-size: 14px;
+  line-height: 124%;
+  color: #ffffffb2;
+  margin-top: 5px;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  position: relative;
+  left: -15px;
+}
+.page .header .slide-previews .current {
+  width: 260px;
+  height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.page .header .slide-previews .current .left .current-number {
+  color: #000;
+  font-size: 15px;
+  border: 1px solid #a87c25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.page
+  .header
+  .slide-previews
+  .current
+  .left
+  .preview-text
+  .current-description {
+  font-size: 13px;
+  line-height: 124%;
+  color: #000;
+  margin-top: 5px;
+  font-family: "Urbanist", sans-serif;
+  letter-spacing: -1%;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.page .header .slide-previews .current .right .preview-image img {
+  display: block;
+}
