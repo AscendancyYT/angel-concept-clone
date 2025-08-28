@@ -23,6 +23,15 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.page .header .backgrounds {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
 .page .header video {
   z-index: -1;
   position: absolute;
@@ -30,6 +39,7 @@
   padding: 0;
   margin: 0;
   left: 0;
+  filter: brightness(50%);
 }
 .page .header .navbar {
   width: 100%;
