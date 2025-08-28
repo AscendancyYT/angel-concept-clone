@@ -1,263 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/logo.png" type="image/png" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Angel Concept</title>
-  </head>
-  <body>
-    <div class="page">
-      <header class="header">
-        <div class="backgrounds">
-          <video class="slide-one currentSlideBackground" autoplay>
-            <source src="./videos/slider_bg.mp4" type="video/mp4" />
-          </video>
-          <img src="./images/slide-two.png" class="slide-two hidden" alt="slide-two">
-          <img src="./images/slide-three.png" class="slide-three hidden" alt="slide-three">
-          <img src="./images/slide-four.png" class="slide-four hidden" alt="slide-four">
-          <img src="./images/slide-five.png" class="slide-five hidden" alt="slide-five">
-          <img src="./images/slide-six.png" class="slide-six hidden" alt="slide-six">
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Concept</title>
 
-        <nav class="navbar">
-          <div class="container">
-            <div class="rating">
-              <div class="rating-number">
-                <div class="rating-logo">
-                  <img
-                    src="../images/yandex.png"
-                    alt="Yandex Logo"
-                    class="ylogo"
-                  />
-                </div>
-                <div class="rating-text">
-                  <span class="number">Рейтинг • 4.9</span>
-                  <span class="explanation">135 Отзывов</span>
-                </div>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="backgrounds">
+        <video class="slide-one active-background" autoplay muted loop>
+          <source src="./videos/slider_bg.mp4" type="video/mp4">
+        </video>
+        <img src="./images/slide-two.png" class="slide-two" alt="Slide 2">
+        <img src="./images/slide-three.png" class="slide-three" alt="Slide 3">
+        <img src="./images/slide-four.png" class="slide-four" alt="Slide 4">
+        <img src="./images/slide-five.png" class="slide-five" alt="Slide 5">
+        <img src="./images/slide-six.png" class="slide-six" alt="Slide 6">
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="rating">
+            <div class="rating-number">
+              <div class="rating-logo">
+                <div class="ylogo">Y</div>
               </div>
-              <span class="rating-description">
-                Салон красоты премиального уровня <br />
-                в Ставрополе
-              </span>
+              <div class="rating-text">
+                <span class="number">Рейтинг • 4.9</span>
+                <span class="explanation">135 Отзывов</span>
+              </div>
             </div>
-            <div class="logo">
-              <img src="../images/logo.png" alt="" />
+            <span class="rating-description">
+              Салон красоты премиального уровня <br />
+              в Ставрополе
+            </span>
+          </div>
+          <div class="logo">ANGEL</div>
+          <div class="info">
+            <div class="socials">
+              <i class="bx bxl-telegram"></i>
+              <i class="bx bxl-whatsapp"></i>
             </div>
-            <div class="info">
-              <div class="socials">
-                <i class="bx bxl-telegram"></i>
-                <i class="bx bxl-whatsapp"></i>
-              </div>
-              <div class="contact">
-                <span class="phone-number">+7 910 004-46-36</span>
-                <span class="address">Пн–ВС, с 10:00–22:00</span>
-              </div>
-              <button class="button">
-                Запись на приём <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
+            <div class="contact">
+              <span class="phone-number">+7 910 004-46-36</span>
+              <span class="address">Пн–ВС, с 10:00–22:00</span>
+            </div>
+            <button class="button">
+              Запись на приём <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navigation -->
+      <section class="navigation">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item"><a href="#">ВСЕ УСЛУГИ</a></li>
+            <li class="menu-item"><a href="#">О ЦЕНТРЕ</a></li>
+            <li class="menu-item"><a href="#">КОСМЕТОЛОГИЯ</a></li>
+            <li class="menu-item"><a href="#">SPA & THAI</a></li>
+            <li class="menu-item"><a href="#">ВЕЛНЕСС-ТЕРАПИЯ</a></li>
+            <li class="menu-item"><a href="#">SPA & РЕЛАКС</a></li>
+            <li class="menu-item"><a href="#">КОРРЕКЦИЯ ФИГУРЫ</a></li>
+            <li class="menu-item"><a href="#">ЖУРНАЛ</a></li>
+            <li class="menu-item"><a href="#">СЕРТИФИКАТЫ</a></li>
+            <li class="menu-item"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slides -->
+      <section class="slides">
+        <div class="container">
+          <div class="slide-one-text slide active-slide">
+            <h1 class="slide-title">
+              Angel Concept — <br />центр премиального ухода
+              <br />и косметологии в Ставрополе
+            </h1>
+            <p class="slide-description">
+              Место, где вы выбираете заботу о себе как стиль <br />
+              жизни. Эстетично, профессионально и легко
+            </p>
+            <button class="slide-button">
+              Подробнее об услугах
+              <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+          <div class="slide-two-text slide">
+            <h1 class="slide-title">
+              Коррекция фигуры — <br />современные методики
+              <br />для идеального силуэта
+            </h1>
+            <p class="slide-description">
+              Безопасные и эффективные процедуры для достижения <br />
+              желаемых результатов. Индивидуальный подход к каждому клиенту
+            </p>
+            <button class="slide-button">
+              Узнать больше
+              <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+          <div class="slide-three-text slide">
+            <h1 class="slide-title">
+              SPA процедуры — <br />релаксация и восстановление
+              <br />в центре города
+            </h1>
+            <p class="slide-description">
+              Погрузитесь в мир спокойствия и гармонии. <br />
+              Профессиональные SPA программы для полного восстановления
+            </p>
+            <button class="slide-button">
+              Записаться на SPA
+              <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+          <div class="slide-four-text slide">
+            <h1 class="slide-title">
+              Велнесс-терапия — <br />комплексный подход
+              <br />к здоровью и красоте
+            </h1>
+            <p class="slide-description">
+              Сочетание современных технологий и традиционных методов. <br />
+              Забота о теле и душе в одном месте
+            </p>
+            <button class="slide-button">
+              Консультация велнесс
+              <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+          <div class="slide-five-text slide">
+            <h1 class="slide-title">
+              Массажные программы — <br />расслабление и терапия
+              <br />от лучших специалистов
+            </h1>
+            <p class="slide-description">
+              Различные виды массажа для релаксации и лечения. <br />
+              Опытные мастера и комфортная атмосфера
+            </p>
+            <button class="slide-button">
+              Выбрать массаж
+              <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+          <div class="slide-six-text slide">
+            <h1 class="slide-title">
+              Эксклюзивные программы — <br />индивидуальные решения
+              <br />для особых потребностей
+            </h1>
+            <p class="slide-description">
+              Персональные программы красоты и здоровья. <br />
+              Создаем уникальный план ухода специально для вас
+            </p>
+            <button class="slide-button">
+              Персональная программа
+              <i class="bx bxs-right-top-arrow-circle"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Previews -->
+      <section class="slide-previews">
+        <div class="preview prOne currentPreview">
+          <div class="left">
+            <div class="current-number nbOne">1</div>
+            <div class="preview-text">
+              <span class="current-description">Косметология: уходы, инъекции, лифтинг</span>
             </div>
           </div>
-        </nav>
-        <section class="navigation">
-          <div class="container">
-            <ul class="menu">
-              <li class="menu-item"><a href="#">ВСЕ УСЛУГИ</a></li>
-              <li class="menu-item"><a href="#">О ЦЕНТРЕ</a></li>
-              <li class="menu-item"><a href="#">КОСМЕТОЛОГИЯ</a></li>
-              <li class="menu-item"><a href="#">SPA & THAI</a></li>
-              <li class="menu-item"><a href="#">ВЕЛНЕСС-ТЕРАПИЯ</a></li>
-              <li class="menu-item"><a href="#">SPA & РЕЛАКС</a></li>
-              <li class="menu-item"><a href="#">КОРРЕКЦИЯ ФИГУРЫ</a></li>
-              <li class="menu-item"><a href="#">ЖУРНАЛ</a></li>
-              <li class="menu-item"><a href="#">СЕРТИФИКАТЫ</a></li>
-              <li class="menu-item"><a href="#">КОНТАКТЫ</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="slides">
-          <div class="container">
-            <div class="slide-one-text slide currentSlide">
-              <h1 class="slide-title">
-                Angel Concept — <br />центр премиального ухода
-                <br />и косметологии в Ставрополе
-              </h1>
-              <p class="slide-description">
-                Место, где вы выбираете заботу о себе как стиль <br />
-                жизни. Эстетично, профессионально и легко
-              </p>
-              <button class="slide-button">
-                Подробнее об услугах
-                <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
-            </div>
-            <div class="slide-two-text slide">
-              <h1 class="slide-title">
-                Angel Concept — <br />центр премиального ухода
-                <br />и косметологии в Ставрополе
-              </h1>
-              <p class="slide-description">
-                Место, где вы выбираете заботу о себе как стиль <br />
-                жизни. Эстетично, профессионально и легко
-              </p>
-              <button class="slide-button">
-                Подробнее об услугах
-                <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
-            </div>
-            <div class="slide-three-text slide">
-              <h1 class="slide-title">
-                Angel Concept — <br />центр премиального ухода
-                <br />и косметологии в Ставрополе
-              </h1>
-              <p class="slide-description">
-                Место, где вы выбираете заботу о себе как стиль <br />
-                жизни. Эстетично, профессионально и легко
-              </p>
-              <button class="slide-button">
-                Подробнее об услугах
-                <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
-            </div>
-            <div class="slide-four-text slide">
-              <h1 class="slide-title">
-                Angel Concept — <br />центр премиального ухода
-                <br />и косметологии в Ставрополе
-              </h1>
-              <p class="slide-description">
-                Место, где вы выбираете заботу о себе как стиль <br />
-                жизни. Эстетично, профессионально и легко
-              </p>
-              <button class="slide-button">
-                Подробнее об услугах
-                <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
-            </div>
-            <div class="slide-five-text slide">
-              <h1 class="slide-title">
-                Angel Concept — <br />центр премиального ухода
-                <br />и косметологии в Ставрополe
-              </h1>
-              <p class="slide-description">
-                Место, где вы выбираете заботу о себе как стиль <br />
-                жизни. Эстетично, профессионально и легко
-              </p>
-              <button class="slide-button">
-                Подробнее об услугах
-                <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
-            </div>
-            <div class="slide-six-text slide">
-              <h1 class="slide-title">
-                Angel Concept — <br />центр премиального ухода
-                <br />и косметологии в Ставрополе
-              </h1>
-              <p class="slide-description">
-                Место, где вы выбираете заботу о себе как стиль <br />
-                жизни. Эстетично, профессионально и легко
-              </p>
-              <button class="slide-button">
-                Подробнее об услугах
-                <i class="bx bxs-right-top-arrow-circle"></i>
-              </button>
+          <div class="right">
+            <div class="preview-image">
+              <img src="./images/slide-one.png" alt="Preview 1">
             </div>
           </div>
-        </section>
-        <section class="slide-previews">
-          <div class="preview prOne currentPreview">
-            <div class="left">
-              <div class="current-number">1</div>
-              <div class="preview-text">
-                <span class="current-description"
-                  >Косметология: уходы, инъекции, лифтинг</span
-                >
-              </div>
-            </div>
-            <div class="right">
-              <div class="preview-image">
-                <img src="../images/slide-one.png" alt="" />
-              </div>
+        </div>
+        <div class="preview prTwo">
+          <div class="left">
+            <div class="preview-number">2</div>
+            <div class="preview-text">
+              <span class="preview-description">Коррекция фигуры</span>
             </div>
           </div>
-          <div class="preview prTwo">
-            <div class="left">
-              <div class="preview-number">2</div>
-              <div class="preview-text">
-                <span class="preview-description">Коррекция фигуры</span>
-              </div>
-            </div>
-            <div class="right">
-              <div class="preview-image">
-                <img src="../images/slide-two.png" alt="" />
-              </div>
+          <div class="right">
+            <div class="preview-image">
+              <img src="./images/slide-two.png" alt="Preview 2">
             </div>
           </div>
-          <div class="preview prThree">
-            <div class="left">
-              <div class="preview-number">3</div>
-              <div class="preview-text">
-                <span class="preview-description">Коррекция фигуры</span>
-              </div>
-            </div>
-            <div class="right">
-              <div class="preview-image">
-                <img src="../images/slide-one.png" alt="" />
-              </div>
+        </div>
+        <div class="preview prThree">
+          <div class="left">
+            <div class="preview-number">3</div>
+            <div class="preview-text">
+              <span class="preview-description">SPA процедуры</span>
             </div>
           </div>
-          <div class="preview prFour">
-            <div class="left">
-              <div class="preview-number">4</div>
-              <div class="preview-text">
-                <span class="preview-description">Коррекция фигуры</span>
-              </div>
-            </div>
-            <div class="right">
-              <div class="preview-image">
-                <img src="../images/slide-one.png" alt="" />
-              </div>
+          <div class="right">
+            <div class="preview-image">
+              <img src="./images/slide-three.png" alt="Preview 3">
             </div>
           </div>
-          <div class="preview prFive">
-            <div class="left">
-              <div class="preview-number">5</div>
-              <div class="preview-text">
-                <span class="preview-description">Коррекция фигуры</span>
-              </div>
-            </div>
-            <div class="right">
-              <div class="preview-image">
-                <img src="../images/slide-one.png" alt="" />
-              </div>
+        </div>
+        <div class="preview prFour">
+          <div class="left">
+            <div class="preview-number">4</div>
+            <div class="preview-text">
+              <span class="preview-description">Велнесс-терапия</span>
             </div>
           </div>
-          <div class="preview prSix">
-            <div class="left">
-              <div class="preview-number">6</div>
-              <div class="preview-text">
-                <span class="preview-description">Коррекция фигуры</span>
-              </div>
-            </div>
-            <div class="right">
-              <div class="preview-image">
-                <img src="../images/slide-one.png" alt="" />
-              </div>
+          <div class="right">
+            <div class="preview-image">
+              <img src="./images/slide-four.png" alt="Preview 4">
             </div>
           </div>
-        </section>
-      </header>
-    </div>
-    <script src="../functions/app.js"></script>
-  </body>
+        </div>
+        <div class="preview prFive">
+          <div class="left">
+            <div class="preview-number">5</div>
+            <div class="preview-text">
+              <span class="preview-description">Массажные программы</span>
+            </div>
+          </div>
+          <div class="right">
+            <div class="preview-image">
+              <img src="./images/slide-five.png" alt="Preview 5">
+            </div>
+          </div>
+        </div>
+        <div class="preview prSix">
+          <div class="left">
+            <div class="preview-number">6</div>
+            <div class="preview-text">
+              <span class="preview-description">Эксклюзивные программы</span>
+            </div>
+          </div>
+          <div class="right">
+            <div class="preview-image">
+              <img src="./images/slide-six.png" alt="Preview 6">
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </div>
+  <script src="./functions/app.js"></script>
+</body>
 </html>
